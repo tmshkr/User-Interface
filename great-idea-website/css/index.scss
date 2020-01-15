@@ -7,12 +7,32 @@ body {
   margin: 0 auto;
 }
 
-header.top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header#top {
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
   padding: 1em 0;
+  position: relative;
   nav a {
     padding: 1em;
+    font-size: 0.9em;
+    color: #bebebe;
+  }
+  > div {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    img.logo {
+      position: relative;
+      top: 50%;
+      margin-top: -50%;
+    }
+  }
+}
+
+header#hero {
+  img {
+    float: right;
   }
 }
