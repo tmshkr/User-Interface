@@ -32,7 +32,20 @@ header#top {
 }
 
 header#hero {
+  div {
+    top: 0;
+    display: inline-block;
+    max-width: 50%;
+    h1 {
+      font-size: 72px;
+      text-align: center;
+    }
+  }
   img {
     float: right;
   }
+}
+
+section.above-fold {
+  clear: both;
 }
