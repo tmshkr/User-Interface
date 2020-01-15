@@ -34,17 +34,22 @@ header#top {
 header#hero {
   margin: 3rem 0;
   font-size: 0;
+  text-align: center;
   > div {
-    display: inline-block;
-    text-align: center;
+    margin: 1rem 0;
+    display: inline-table;
+    vertical-align: middle;
     width: 50%;
   }
   h1 {
     font-size: 72px;
   }
   button {
-    margin: auto;
-    display: inline-block;
+    padding: 0.25rem 1rem;
+    font-size: 0.9rem;
+    color: #777;
+    background: none;
+    border: 1px solid #555;
   }
 }
 
