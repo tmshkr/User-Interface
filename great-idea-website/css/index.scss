@@ -11,10 +11,10 @@ header#top {
   // display: flex;
   // justify-content: space-between;
   // align-items: center;
-  padding: 1em 0;
+  padding: 1rem 0;
   position: relative;
   nav a {
-    padding: 1em;
+    padding: 1rem;
     font-size: 0.9em;
     color: #bebebe;
   }
@@ -32,32 +32,43 @@ header#top {
 }
 
 header#hero {
-  margin-top: 3em;
-  div {
+  margin: 3rem 0;
+  font-size: 0;
+  > div {
     display: inline-block;
     text-align: center;
     width: 50%;
-    h1 {
-      font-size: 72px;
-    }
-    button {
-      margin: auto;
-      display: inline-block;
-    }
   }
-  img {
-    float: right;
+  h1 {
+    font-size: 72px;
+  }
+  button {
+    margin: auto;
+    display: inline-block;
   }
 }
 
+hr {
+  clear: both;
+  margin: 1rem 0;
+  border: 1px solid #000;
+}
+
+section {
+  margin: 2rem 0;
+}
+
 section.above-fold {
-  clear: right;
   font-size: 0;
   article {
     font-size: 1rem;
     display: inline-block;
     width: 50%;
   }
+}
+
+img.middle-img {
+  width: 100%;
 }
 
 section.below-fold {
