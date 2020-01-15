@@ -1,0 +1,18 @@
+* {
+  outline: 1px solid cyan;
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  nav a {
+    padding: 1em;
+  }
+}
