@@ -1,5 +1,27 @@
-* {
-  outline: 1px solid cyan;
+// * {
+//   outline: 1px solid cyan;
+// }
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 0.77rem;
+  line-height: 1.1rem;
+  color: #777;
 }
 
 body {
@@ -7,12 +29,21 @@ body {
   margin: 0 auto;
 }
 
+main {
+  margin: 3rem 0;
+}
+
 header#top {
   // display: flex;
   // justify-content: space-between;
   // align-items: center;
   padding: 1rem 0;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.95);
   nav a {
     padding: 1rem;
     font-size: 0.9em;
@@ -31,8 +62,7 @@ header#top {
   }
 }
 
-header#hero {
-  margin: 3rem 0;
+section#hero {
   font-size: 0;
   text-align: center;
   > div {
@@ -63,6 +93,10 @@ section {
   margin: 2rem 0;
 }
 
+article {
+  padding-right: 1rem;
+}
+
 section.above-fold {
   font-size: 0;
   article {
@@ -77,8 +111,25 @@ img.middle-img {
 }
 
 section.below-fold {
+  font-size: 0;
   article {
+    font-size: 1rem;
     display: inline-block;
     width: 33%;
+  }
+}
+
+footer {
+  p {
+    margin: 0.3rem 0;
+    &.phone-number {
+      margin: 0.5rem 0;
+    }
+  }
+  small {
+    display: block;
+    color: #777;
+    font-size: 0.8rem;
+    text-align: center;
   }
 }
